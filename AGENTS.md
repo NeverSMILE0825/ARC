@@ -40,4 +40,4 @@ Run the typecheck and `npm test`. Do not call the task done until the affected H
 8. Replay only stored chain events. Do not interpolate missing trades or change their timestamps when playback speed changes.
 9. Recognition rates come only from saved or imported responses. Do not generate participants.
 10. Keep editorial brand scores separate from collision records and from recognition rates.
-11. Publish to `main` so GitHub Pages updates https://analyze-research-capital.site/ from the domain root. `public/CNAME` must stay `analyze-research-capital.site`.
+11. Publish to `main` on https://github.com/NeverSMILE0825/ARC.git so GitHub Pages updates https://neversmile0825.github.io/ARC/. The Pages export uses base path `/ARC`.

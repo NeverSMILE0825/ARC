@@ -5,7 +5,7 @@ import type { NextConfig } from 'next';
 const pages = process.env.GITHUB_PAGES === 'true';
 const commit = (process.env.GITHUB_SHA || process.env.NEXT_PUBLIC_COMMIT_SHA || readSha()).trim();
 const builtAt = new Date().toISOString();
-const basePath = '';
+const basePath = pages ? '/ARC' : '';
 
 function readSha() {
   try {
@@ -26,7 +26,7 @@ const config: NextConfig = {
     NEXT_PUBLIC_BUILD_TIME: builtAt,
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
-  ...(pages ? { output: 'export' as const } : {
+  ...(pages ? { output: 'export' as const, basePath, assetPrefix: basePath } : {
     async headers() {
       return [{ source: '/version.json', headers: [{ key: 'Cache-Control', value: 'no-store' }] }];
     },

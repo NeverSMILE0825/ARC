@@ -21,9 +21,9 @@ $env:LIVE='1'; npm run test:live   # PowerShell: real mainnet read
 
 ## GitHub Pages
 
-Pushes to `main` run `.github/workflows/pages.yml`. The pages build copies `app/api` outside the App Router, exports a static site from the domain root, and restores the API routes. `public/CNAME` is copied into the export so the custom domain stays attached.
+Pushes to `main` on https://github.com/NeverSMILE0825/ARC.git run `.github/workflows/pages.yml`. The pages build copies `app/api` outside the App Router, exports a static site with base path `/ARC`, and restores the API routes.
 
-https://analyze-research-capital.site/
+https://neversmile0825.github.io/ARC/
 
 Indexing on that site happens in the browser. There is no Postgres there.
 

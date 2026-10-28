@@ -273,7 +273,7 @@ export const ARTICLES: Article[] = [
       { heading: 'Inconsistent buy and sell totals', body: ['Another site may count transfers, include project wallets, or use a different clock. Compare the same UTC window and remember unvalued routes are excluded.'] },
       { heading: 'Long indexing', body: ['Wide windows and many pools mean more logs and signer reads. The stage list shows blocks scanned. Cancel and use a shorter preset if you only need the open.'] },
       { heading: 'Stale browser data', body: ['Settings → Check published version compares this bundle with version.json. Reload if the commits differ. Hashed assets change with the deploy. The open tab keeps its JavaScript until reload.'] },
-      { heading: 'GitHub Pages and the worker', body: ['The site is static and is published at the domain root. Indexing stops when the tab closes. A green Pages deploy does not mean a server is watching new blocks.'] },
+      { heading: 'GitHub Pages and the worker', body: ['The site is static and is published at https://neversmile0825.github.io/ARC/. Styles and scripts load from the /ARC prefix. Indexing stops when the tab closes. A green Pages deploy does not mean a server is watching new blocks.'] },
     ],
   },
   {
